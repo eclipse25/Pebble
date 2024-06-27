@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Pebble</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="add-tab">+</button>
+        </div>
+        <div id="lists-container"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Enter a task" required>
+                <input type="date" id="due-date">
+                <input type="color" id="task-color" value="#ff0000">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/todolist.js"></script>
+    <script src="scripts/clock.js"></script>
+</body>
+</html>
